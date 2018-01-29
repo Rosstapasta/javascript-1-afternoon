@@ -5,7 +5,7 @@
 
   You can refresh the page at any time to re-run all the tests.
 */
-
+var testVar = "hello";
 ////////// PROBLEM 1 //////////
 
 // Do not edit the code below.
