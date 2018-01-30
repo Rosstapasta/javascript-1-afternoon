@@ -5,7 +5,7 @@
 
   You can refresh the page at any time to re-run all the tests.
 */
-var testVar = "hello";
+
 ////////// PROBLEM 1 //////////
 
 // Do not edit the code below.
@@ -18,7 +18,13 @@ var name = 'Tyler';
 */
 
 //Code Here
-
+function isTyler(name){
+  if(name === 'Tyler'){
+    return true;
+  }else{
+    return false;
+  };
+};
 
 
 ////////// PROBLEM 2 //////////
@@ -28,7 +34,10 @@ var name = 'Tyler';
 */
 
 //Code Here
-
+function getName(){
+  var prompt2 = prompt("your name")
+  return prompt2;
+};
 
 
 ////////// PROBLEM 3 //////////
@@ -41,7 +50,9 @@ var name = 'Tyler';
 */
 
 //Code Here
-
+function welcome(){
+  alert("Welcome, " + getName())
+};
 
 
 ////////// PROBLEM 4 //////////
@@ -71,7 +82,9 @@ var name = 'Tyler';
 */
 
 //Code Here
-  
+  function myName(){
+    return "Eric";
+  };
 
 
 /*
@@ -79,7 +92,7 @@ var name = 'Tyler';
 */
 
 //Code Here
-
+var newMyName = function myName(){return "Eric"};
 
 
 /*
@@ -87,7 +100,7 @@ var name = 'Tyler';
 */
 
 // Code Here
-
+alert(newMyName);
 
 
 ////////// PROBLEM 7 //////////
@@ -97,7 +110,10 @@ var name = 'Tyler';
 */
 
 //Code Here
-
+function outerFn(){
+  return function(){
+    return "Eric"};
+};
 
 
 /*
@@ -105,7 +121,7 @@ var name = 'Tyler';
 */
 
 //Code Here
-
+var innerFn = outerFn();
 
 
 /* 
@@ -113,3 +129,4 @@ var name = 'Tyler';
 */
 
 // Code Here
+innerFn;
